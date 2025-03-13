@@ -1,0 +1,33 @@
+package exercicioexemploswitch;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class ExercicioExemploSwitch {
+
+    
+    public static void main(String[] args) {
+        Scanner leia = new Scanner(System.in);
+        int x = 0;
+        //Essa parte abaixo substitui o System.out.println("...").
+        x = Integer.parseInt(JOptionPane.showInputDialog ("Digite um numero"));
+        switch(x){
+            case 1:
+                //esse comando subtitui o System.out.println("");
+                JOptionPane.showMessageDialog(null, "Voce digitou 1");
+                break;
+            case 2:
+                //esse comando subtitui o System.out.println("");
+                JOptionPane.showMessageDialog(null, "Voce digitou 2");
+                break;
+            case 3:
+                //esse comando subtitui o System.out.println("");
+                JOptionPane.showMessageDialog(null, "Voce digitou 3");
+                break;
+            default:
+                //esse comando subtitui o System.out.println("");
+                JOptionPane.showMessageDialog(null, "Voce nao digitou nenhuma das alternativas");
+        }
+    }
+    
+}
