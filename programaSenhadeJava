@@ -1,0 +1,23 @@
+package programausuariosenha;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class ProgramaUsuarioSenha {
+
+   
+    public static void main(String[] args) {
+    Scanner leia = new Scanner(System.in);
+    
+    String senhacorreta = "1234";
+    
+        System.out.println("Digite sua senha:");
+        String senhaDigitada = leia.nextLine();
+        
+        if (senhaDigitada.equals(senhacorreta)){
+            System.out.println("Acesso Aprovado");
+        }else {
+            System.out.println("Acesso Negado");}
+          
+    }
+    
+}
