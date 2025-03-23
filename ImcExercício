@@ -1,0 +1,29 @@
+package estudandojava1;
+
+import java.util.Scanner;
+public class EstudandoJava1 {
+
+    
+    public static void main(String[] args) {
+      Scanner leia = new Scanner(System.in);
+      float imc, peso, altura;
+        System.out.println("Digite seu peso:  ");
+        peso = leia.nextFloat();
+        System.out.println("Digite sua altura:  ");
+        altura = leia.nextFloat();
+        imc = peso/(altura * altura);
+        
+        if (imc<20){
+            System.out.println("magro");
+        }else if ((imc >=20)&&(imc<24)){
+            System.out.println("normal");
+        }else if ((imc >=24)&&(imc<29)){
+            System.out.println("acima do peso");
+        }else if ((imc >=29)&&(imc<34)){
+            System.out.println("obeso");
+        }else{
+            System.out.println("obeso morbido");
+        }
+    }
+    
+}
